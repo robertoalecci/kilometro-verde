@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1356px" height="516px" viewBox="0 0 1356 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mask</title>
+    <defs>
+        <path d="M867.658292,6308 C616.171981,6308 -581.036078,6228.90349 632.548766,5390.38279 C1846.13361,4551.8621 1407.11559,5866.68979 1344.90133,6026.47301 C1282.68708,6186.25623 1119.1446,6308 867.658292,6308 Z" id="path-1"></path>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-10.000000, -5271.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1" transform="translate(785.500000, 5710.500000) scale(-1, 1) rotate(-341.000000) translate(-785.500000, -5710.500000) "></use>
+            </mask>
+            <use id="Mask" fill="#058E54" transform="translate(785.500000, 5710.500000) scale(-1, 1) rotate(-341.000000) translate(-785.500000, -5710.500000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

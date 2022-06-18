@@ -3,3 +3,94 @@ Sito web: nomesitoweb
 Author: fisima.it
 Versione 1.0
 */
+
+/*Fonts*/
+@font-face {
+    font-family: 'lothian-sans-XS';
+    font-style:  normal;
+    font-weight: 400;
+    src: url("fonts/lothian-sans-XS.woff?v=3.3") format("woff");
+}
+
+/*Generali*/
+body { background: #F1FAEE; font-family: 'lothian-sans-XS', sans-serif; font-size: 25px; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Amatic SC', cursive; font-weight: 700; color: #058E54; }
+h1 span.lgreen ,h2 span.lgreen ,h3 span.lgreen ,h4 span.lgreen ,h5 span.lgreen ,h6 span.lgreen { color: #8ABF4E; }
+h1 span.blue ,h2 span.blue ,h3 span.blue ,h4 span.blue ,h5 span.blue, h6 span.blue { color: #20A7E0; }
+a {}
+a:hover,
+a:active {}
+button { background: transparent; border: 0; font-family: 'Amatic SC', cursive; display: flex; justify-content: center; align-items: center; font-size: 40px; font-weight: 700; color: #20A7E0; gap: 10px; margin-left: auto; }
+button i { font-size: 24px; color: #058E54; }
+button:hover,
+button:active { text-decoration: underline; }
+
+/*Container*/
+.container-fluid { padding: 0 124px; }
+
+/*Classe per animare elementi*/
+.animate { -webkit-transition:all 0.4s; -moz-transition:all 0.4; transition:all 0.4s }
+
+/*---------------------------------------------------------
+Navbar
+---------------------------------------------------------*/
+.navbar { padding-top: 32px; padding-bottom: 32px; }
+.navbar .col-4 { display: flex; }
+.navbar .col-4:nth-child(1) { justify-content: flex-start; }
+.navbar .col-4:nth-child(2) { justify-content: center; }
+.navbar .col-4:nth-child(3) { justify-content: flex-end; }
+/*Loghi*/
+.navbar .logotipo { max-width: 240px; }
+.navbar .marchio { max-width: 294px; }
+/*Navbar*/
+.navbar.scrolled { background: #f2fbee; padding-top: 8px; padding-bottom: 8px; border-bottom: 1px solid #cad8c1; }
+.navbar.scrolled .logotipo { max-width: 140px; }
+.navbar.scrolled .marchio { max-width: 60px; }
+/*Menu (aperto)*/
+.offcanvas-header { padding: 92px 120px; }
+.offcanvas-body { padding: 80px 120px; }
+.offcanvas-body ul { padding-left: 0; list-style: none; font-size: 60px; font-family: 'Amatic SC', cursive; }
+.offcanvas-end { width: 100%; background: #f2fbee; }
+
+/*---------------------------------------------------------
+Footer
+---------------------------------------------------------*/
+footer { background-image: url(img/footer-bg.svg); background-size: 98%; background-repeat: no-repeat; background-position: right top; padding: 200px 320px 56px 240px !important; color: #fff; }
+footer ul { list-style: none; padding-left: 0; }
+footer ul li { display: inline-block; margin-right: 8px; }
+
+/*---------------------------------------------------------
+Home
+---------------------------------------------------------*/
+/*Hero*/
+.section-hero { background-image: url(img/home-hero.png); background-size: cover; height: 100vh; background-position: center center; }
+/*About*/
+.section-about { margin: 88px auto 120px auto; text-align: center; position: relative; }
+.section-about .rotate_text { height: 672px; display: flex; align-items: center; justify-content: center; }
+.section-about .rotate_text h1 { font-size: 110px; transform: rotate(-90deg); }
+.section-about p { max-width: 750px; margin: 120px auto 0; }
+.section-about .home-plant-sx-top { position: absolute; top: 0; left: 0; max-width: 196px; }
+.section-about .home-plant-sx-bottom { position: absolute; bottom: 0; left: 0; max-width: 306px; }
+.section-about .home-plant-dx-top { position: absolute; top: 0; right: 0; max-width: 362px; }
+.section-about .home-plant-dx-bottom { position: absolute; bottom: 0; right: 0; max-width: 220px; }
+/*Packs*/
+.section-packs { position: relative; text-align: center; margin-bottom: 234px; }
+.section-packs h2 { font-size: 172px; }
+.section-packs h3 { font-size: 54px; margin-bottom: 116px; }
+.section-packs button.cta { position: absolute; bottom: -16px; right: 120px; }
+.section-packs .carousel-item .pack_container { display: flex; justify-content: center; align-items: center; }
+.section-packs .carousel-item .pack_container .pack { max-width: 455px; position: relative; z-index: 2; }
+.section-packs .carousel-item .pack_container .background { position: absolute; z-index: 1; }
+.section-packs .custom-control { height: 92px; width: 92px; border: 3px solid #058E54; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 36px; }
+
+/*Tipologia agricoltura*/
+.section-agricoltura { position: relative; margin-bottom: 420px; }
+.section-agricoltura h2 { position: relative; font-size: 88px; margin-bottom: 260px; max-width: 1120px; z-index: 2; }
+.section-agricoltura p { max-width: 546px; }
+.section-agricoltura img { position: absolute; right: 0; top: 0; max-width: 820px; z-index: 1; }
+/*Focus*/
+.section-focus { margin-bottom: 240px; }
+.section-focus h2 { font-size: 60px; margin-bottom: 140px; }
+.section-focus h3 { color: #000; }
+.section-focus .col-4 { text-align: center; }
+.section-focus .col-12 { text-align: right; margin-top: 80px; }
